@@ -38,6 +38,7 @@ Open `Opencv-Image_Enhancer.ipynb` in Colab and run all cells
 ```bash
 pip install -r requirements.txt
 python app.py
+
 ## 📋 Requirements
 
 - Python 3.8+
@@ -66,21 +67,26 @@ Works with:
 
 ## ⚙️ Technical Details
 
-**Input:** Any image format (JPG, PNG, etc.)
-**Output:** Enhanced 2x larger image
-**Processing Time:** Depends on image size (typically 2-5 seconds)
+| Parameter | Description |
+|-----------|-------------|
+| **Input** | Any image format (JPG, PNG, BMP, etc.) |
+| **Output** | Enhanced 2x larger image |
+| **Processing Time** | 2–5 seconds (depends on image size) |
 
 ---
 
 ## 📄 License
 
-MIT License — See LICENSE file
+MIT License — See [LICENSE](LICENSE) file for details.
 
 ---
 
 ## 👨‍💻 Author
 
-[kamandNajari](https://github.com/kamandNajari)
+**Kamand Najari**
+
+[![GitHub](https://img.shields.io/badge/GitHub-kamandNajari-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kamandNajari)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/kamand-najari)
 
 ---
 
