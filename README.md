@@ -1,27 +1,14 @@
 # 🖼️ OpenCV Image Enhancer
 
-
-
 ![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
-
-
-
-
 ![OpenCV](https://img.shields.io/badge/OpenCV-4.8-green)
-
-
-
-
 ![Gradio](https://img.shields.io/badge/Gradio-web--ui-orange)
-
-
-
-
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
 
+**Image Enhancer** is a powerful desktop/web application built with OpenCV that enhances image quality through advanced algorithms. It reduces noise, improves contrast, sharpens details, and upscales images — all in one click.
 
+---
 
-Advanced image enhancement tool using OpenCV algorithms to improve photo quality with noise reduction, contrast enhancement, sharpening, and upscaling.
 ## ✨ Features
 
 - **Noise Reduction** — Bilateral filtering removes noise while preserving edges
@@ -29,14 +16,20 @@ Advanced image enhancement tool using OpenCV algorithms to improve photo quality
 - **Sharpening** — Custom kernel-based detail enhancement
 - **Upscaling** — 2x image enlargement with cubic interpolation
 - **Unsharp Mask** — Final enhancement for crisp results
-  ## 📊 Processing Pipeline
+
+---
+
+## 📊 Processing Pipeline
 
 1. **Bilateral Filter** → Reduce noise
 2. **CLAHE** → Enhance contrast
 3. **Sharpening Kernel** → Add details
 4. **2x Upscaling** → Enlarge image
 5. **Unsharp Mask** → Final sharpening
-6. ## 🚀 Quick Start
+
+---
+
+## 🚀 Quick Start
 
 ### On Google Colab
 Open `Opencv-Image_Enhancer.ipynb` in Colab and run all cells
@@ -55,6 +48,8 @@ python app.py
 
 See `requirements.txt` for full list.
 
+---
+
 ## 📝 Usage
 
 1. Upload your image (any format)
@@ -67,16 +62,29 @@ Works with:
 - Old/faded photos
 - Color and grayscale images
 
+---
+
 ## ⚙️ Technical Details
 
 **Input:** Any image format (JPG, PNG, etc.)
 **Output:** Enhanced 2x larger image
 **Processing Time:** Depends on image size (typically 2-5 seconds)
 
+---
+
 ## 📄 License
 
 MIT License — See LICENSE file
 
+---
+
 ## 👨‍💻 Author
 
 [kamandNajari](https://github.com/kamandNajari)
+
+---
+
+### 🚀 Clone this project
+
+```bash
+git clone https://github.com/kamandNajari/opencv-image-enhancer.git
