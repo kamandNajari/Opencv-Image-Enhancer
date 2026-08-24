@@ -39,6 +39,10 @@ Open `Opencv-Image_Enhancer.ipynb` in Colab and run all cells
 pip install -r requirements.txt
 python app.py
 
+
+---
+
+```markdown
 ## 📋 Requirements
 
 - Python 3.8+
@@ -48,23 +52,17 @@ python app.py
 - scikit-image
 
 See `requirements.txt` for full list.
-
----
-
-### 📝 Usage
+## 📝 Usage
 
 1. Upload your image (any format)
 2. Click "Submit"
 3. Download enhanced result
 
-Works with:
+**Works with:**
 - Low-resolution photos
 - Blurry images
 - Old/faded photos
 - Color and grayscale images
-
----
-
 ## ⚙️ Technical Details
 
 | Parameter | Description |
@@ -72,15 +70,6 @@ Works with:
 | **Input** | Any image format (JPG, PNG, BMP, etc.) |
 | **Output** | Enhanced 2x larger image |
 | **Processing Time** | 2–5 seconds (depends on image size) |
-
----
-
-## 📄 License
-
-MIT License — See [LICENSE](LICENSE) file for details.
-
----
-
 ## 👨‍💻 Author
 
 **Kamand Najari**
