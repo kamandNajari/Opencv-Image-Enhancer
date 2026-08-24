@@ -33,7 +33,7 @@
 
 ### On Google Colab
 Open `Opencv-Image_Enhancer.ipynb` in Colab and run all cells
-
+---
 ### Locally
 ```bash
 pip install -r requirements.txt
@@ -50,7 +50,7 @@ See `requirements.txt` for full list.
 
 ---
 
-## 📝 Usage
+### 📝 Usage
 
 1. Upload your image (any format)
 2. Click "Submit"
