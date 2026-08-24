@@ -29,6 +29,7 @@
 An advanced image enhancement tool built with **OpenCV** that improves photo quality through a multi-stage classical image-processing pipeline: noise reduction, adaptive contrast enhancement, sharpening, and 2x upscaling — all wrapped in a simple **Gradio** web interface.
 
 ---
+
 ## ✨ Features
 
 | Feature | Technique | Purpose |
@@ -59,17 +60,25 @@ Input Image → Bilateral Filter → CLAHE → Sharpen → 2x Upscale → Unshar
 
 ### Clone the repository
 
-```bash
-git clone https://github.com/kamandNajari/Opencv-Image-Enhancer.git
-cd Opencv-Image-Enhancer
+    git clone https://github.com/kamandNajari/Opencv-Image-Enhancer.git
+    cd Opencv-Image-Enhancer
 
+### Install dependencies
 
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
-python app.py
+### Run the app
 
+    python app.py
 
-```markdown
+Gradio will start a local web server (by default at `http://127.0.0.1:7860`) — open it in your browser to use the tool.
+
+### Run on Google Colab
+
+Alternatively, open `Opencv-Image_Enhancer.ipynb` in Google Colab and run all cells — no local installation required.
+
+---
+
 ## 📋 Requirements
 
 - Python 3.8+
@@ -78,7 +87,7 @@ python app.py
 - NumPy
 - scikit-image
 
-Full pinned versions are listed in [`requirements.txt`](./requirements.txt).
+Full pinned versions are listed in `requirements.txt`.
 
 ---
 
@@ -111,7 +120,7 @@ Full pinned versions are listed in [`requirements.txt`](./requirements.txt).
 
 ## 📄 License
 
-This project is licensed under the **MIT License** — see the [LICENSE](./LICENSE) file for details.
+This project is licensed under the **MIT License** — see the LICENSE file for details.
 
 ---
 
