@@ -54,6 +54,7 @@ python app.py
 - scikit-image
 
 See `requirements.txt` for full list.
+
 ## 📝 Usage
 
 1. Upload your image (any format)
@@ -65,11 +66,13 @@ Works with:
 - Blurry images
 - Old/faded photos
 - Color and grayscale images
+
 ## ⚙️ Technical Details
 
 **Input:** Any image format (JPG, PNG, etc.)
 **Output:** Enhanced 2x larger image
 **Processing Time:** Depends on image size (typically 2-5 seconds)
+
 ## 📄 License
 
 MIT License — See LICENSE file
