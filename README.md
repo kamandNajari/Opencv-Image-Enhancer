@@ -1,85 +1,120 @@
 # 🖼️ OpenCV Image Enhancer
 
+
+
 ![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+
+
+
+
 ![OpenCV](https://img.shields.io/badge/OpenCV-4.8-green)
+
+
+
+
 ![Gradio](https://img.shields.io/badge/Gradio-web--ui-orange)
+
+
+
+
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
 
-**Image Enhancer** is a powerful desktop/web application built with OpenCV that enhances image quality through advanced algorithms. It reduces noise, improves contrast, sharpens details, and upscales images — all in one click.
+
+
+
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
+
+
+
+An advanced image enhancement tool built with **OpenCV** that improves photo quality through a multi-stage classical image-processing pipeline: noise reduction, adaptive contrast enhancement, sharpening, and 2x upscaling — all wrapped in a simple **Gradio** web interface.
 
 ---
-
 ## ✨ Features
 
-- **Noise Reduction** — Bilateral filtering removes noise while preserving edges
-- **Contrast Enhancement** — CLAHE for adaptive histogram equalization
-- **Sharpening** — Custom kernel-based detail enhancement
-- **Upscaling** — 2x image enlargement with cubic interpolation
-- **Unsharp Mask** — Final enhancement for crisp results
+| Feature | Technique | Purpose |
+|---|---|---|
+| **Noise Reduction** | Bilateral Filtering | Removes noise/grain while preserving edges |
+| **Contrast Enhancement** | CLAHE (Contrast Limited Adaptive Histogram Equalization) | Improves local contrast without over-amplifying noise |
+| **Sharpening** | Custom convolution kernel | Enhances fine details and edges |
+| **Upscaling** | Cubic interpolation | Enlarges the image 2x while keeping edges smooth |
+| **Final Sharpening** | Unsharp Masking | Adds a final crisp, high-detail finish |
 
 ---
 
 ## 📊 Processing Pipeline
 
-1. **Bilateral Filter** → Reduce noise
-2. **CLAHE** → Enhance contrast
-3. **Sharpening Kernel** → Add details
-4. **2x Upscaling** → Enlarge image
-5. **Unsharp Mask** → Final sharpening
+The image passes through the following stages, in order:
+
+1. **Bilateral Filter** → reduces noise while keeping edges sharp
+2. **CLAHE** → enhances local contrast adaptively (usually applied on the L-channel in LAB color space)
+3. **Sharpening Kernel** → convolves the image with a sharpening kernel to bring out detail
+4. **2x Upscaling** → enlarges the image using `cv2.INTER_CUBIC` interpolation
+5. **Unsharp Mask** → subtracts a blurred copy from the image to boost perceived sharpness
+
+Input Image → Bilateral Filter → CLAHE → Sharpen → 2x Upscale → Unsharp Mask → Output Image
 
 ---
 
 ## 🚀 Quick Start
 
-### On Google Colab
-Open `Opencv-Image_Enhancer.ipynb` in Colab and run all cells
----
-### Locally
+### Clone the repository
+
 ```bash
+git clone https://github.com/kamandNajari/Opencv-Image-Enhancer.git
+cd Opencv-Image-Enhancer
+
+
 pip install -r requirements.txt
+
 python app.py
 
-
----
 
 ```markdown
 ## 📋 Requirements
 
 - Python 3.8+
-- OpenCV
+- OpenCV (`opencv-python`)
 - Gradio
 - NumPy
 - scikit-image
 
-See `requirements.txt` for full list.
-## 📝 Usage
-
-1. Upload your image (any format)
-2. Click "Submit"
-3. Download enhanced result
-
-**Works with:**
-- Low-resolution photos
-- Blurry images
-- Old/faded photos
-- Color and grayscale images
-## ⚙️ Technical Details
-
-| Parameter | Description |
-|-----------|-------------|
-| **Input** | Any image format (JPG, PNG, BMP, etc.) |
-| **Output** | Enhanced 2x larger image |
-| **Processing Time** | 2–5 seconds (depends on image size) |
-## 👨‍💻 Author
-
-**Kamand Najari**
-
-[![GitHub](https://img.shields.io/badge/GitHub-kamandNajari-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kamandNajari)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/kamand-najari)
+Full pinned versions are listed in [`requirements.txt`](./requirements.txt).
 
 ---
 
-### 🚀 Clone this project
+## 📝 Usage
 
-```bash
-git clone https://github.com/kamandNajari/opencv-image-enhancer.git
+1. Upload your image (any common format: JPG, PNG, etc.)
+2. Click **Submit**
+3. Preview the enhanced result
+4. Download the output image
+
+**Works well with:**
+- Low-resolution photos
+- Blurry images
+- Old or faded photos
+- Both color and grayscale images
+
+---
+
+## ⚙️ Technical Details
+
+| | |
+|---|---|
+| **Input** | Any standard image format (JPG, PNG, BMP, etc.) |
+| **Output** | Enhanced image, 2x the original resolution |
+| **Processing time** | ~2–5 seconds, depending on image size |
+| **Interface** | Gradio web UI |
+| **Core library** | OpenCV (classical image processing, no deep learning model required) |
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** — see the [LICENSE](./LICENSE) file for details.
+
+---
+
+## 👨‍💻 Author
+
+**[kamandNajari](https://github.com/kamandNajari)**
