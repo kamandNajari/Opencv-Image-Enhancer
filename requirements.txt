@@ -1,0 +1,6 @@
+opencv-python-headless
+gradio
+pillow
+numpy
+scikit-image
+
